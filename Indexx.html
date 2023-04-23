@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid CF</title>
+    <link rel="icon" type="image/x-icon" href="Real_Madrid_CF.svg.webp">
+    <link rel="stylesheet" href="styles.css">
+       <style>
+        .header{
+            background-color: rgb(255, 255, 255);
+            color: rgb(21, 92, 224);
+            height: 100px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: center;
+padding: 60px;
+font-size: 60px;
+        }
+        .link{background-color: rgb(255, 255, 255);
+            padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+        }
+        .vertical-nav{
+    background-color: rgb(255, 255, 255);
+    float: left;
+height: 900px;
+width: 50px;
+padding: 30px;
+font-size: 50px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align:start
+}
+.section{
+
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: center;
+position: relative;
+}
+a:hover{
+    color: rgb(221, 199, 0);
+}
+a{
+    color: rgb(21, 92, 224);
+}
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(47, 0, 255, 0.8);
+}
+.dot {
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  margin: 0 2px;
+  background-color: #f70404;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.active, .dot:hover {
+  background-color: #4400ff;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="Real_Madrid_C.F._the_Winner_Of_The_Champions_League_in_2018_(1).jpg"
+  style="width:100%" class="img-fluid" alt="...">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="merlin_207708567_8d6620fd-697f-40e6-93fa-4dc12b2abe65-superJumbo.jpg" 
+  style="width:100%" class="img-fluid" alt="...">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="_AV29206_Thumb.jpg" style="width:100%" class="img-fluid" alt="...">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    <img src="Real_Madrid_CF.svg.webp" width="100"
+     style="position: absolute;
+          top: 526px;
+     left: 0px;" 
+    class="img-fluid" alt="...">
+    <img src="Real_Madrid_CF.svg.webp" width="100" 
+     style="position: 
+     absolute;
+     top: 526px;
+     right: 0px;" 
+    class="img-fluid" alt="...">
+
+
+    <div class="header">
+        Real Madrid CF
+    </div>
+    <div class="vertical-nav">
+        <ul>
+            <li><a href="Ronaldo.html" target="_blank" style="text-decoration: none;">Seuran suurin legenda</a></li>
+            </ul>
+    <ul>
+     <li><a href="Trophies.html" target="_blank" style="text-decoration: none;">Mestaruudet</a></li>
+    </ul>
+    <ul>
+        <li><a href="Pelaajat.html" target="_blank" style="text-decoration: none;">Pelaajat</a></li>
+        </ul>
+        
+</div>
+    <div class="section">
+        <h1>Real Madrid CF on maailman menestynein jalkapalloseura.</h1>
+<p>Real Madrid on perustettu 121 vuotta sitten, vuonna 1902.</p>
+    </div>
+</html>
